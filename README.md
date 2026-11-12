@@ -9,5 +9,6 @@ Per motivi di spazio, il dataset originale non è caricato su questo repository.
 
 ## Ordine di esecuzione dei Notebook
 Per riprodurre l'intero progetto, eseguire i notebook su Google Colab nel seguente ordine:
-1. **`01_Data_Cleaning_EDA.ipynb`**: Pulizia dati, gestione duplicati, rimozione patte e Analisi Esplorativa (EDA). Salva `train_cleaned.csv` e `test_cleaned.csv`.
+1. **`01 Pulzia dataset.ipynb`**: Pulizia dati, gestione duplicati, rimozione patte e Analisi Esplorativa (EDA). Salva `train_cleaned.csv` e `test_cleaned.csv`.
 2. **`02 Feature_Engineering.ipynb`**: Viene effettuata la feature engeneering, vengono create vari dataset con le colonne aggiunte. Salva i file di addestramento e di test a seconda delle N semimosse analizzate
+3. **`03 Baseline.ipynb`**: utilizza i file `train_cleaned.csv` e `test_cleaned.csv`. Definisce la soglia predittiva minima (senza utilizzare alcuna informazione dalla scacchiera) per poter quantificare, nei passaggi successivi, il reale valore aggiunto delle feature posizionali.
